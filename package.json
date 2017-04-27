@@ -1,0 +1,57 @@
+{
+  "name": "simple-search",
+  "displayName": "Simple Search",
+  "description": "Search selected text in default browser from Visual Studio Code",
+  "version": "1.0.0",
+  "publisher": "burcadoruciprian",
+  "engines": {
+    "vscode": "^1.11.0"
+  },
+  "author": {
+    "name": "Ciprian Burca",
+    "url": "https://github.com/burcadoruciprian"
+  },
+  "icon": "resources/search.png",
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:extension.simpleSearch"
+  ],
+  "main": "./extension",
+  "contributes": {
+    "menus": {
+      "editor/context": [
+        {
+          "when": "editorHasSelection",
+          "command": "extension.simpleSearch",
+          "group": "navigation"
+        }
+      ]
+    },
+    "commands": [
+      {
+        "command": "extension.simpleSearch",
+        "title": "Search"
+      }
+    ],
+    "configuration": {
+      "title": "Simple Search Configuration",
+      "type": "object",
+      "properties": {
+        "simpleSearch.QueryTemplate": {
+          "type": "string",
+          "default": "https://www.google.com/search?q=%SELECTION%",
+          "description": "Search query."
+        }
+      }
+    }
+  },
+  "scripts": {
+    "postinstall": "node ./node_modules/vscode/bin/install",
+    "test": "node ./node_modules/vscode/bin/test"
+  },
+  "devDependencies": {
+    "vscode": "^1.0.0"
+  }
+}
