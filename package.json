@@ -12,6 +12,14 @@
     "url": "https://github.com/burcadoruciprian"
   },
   "icon": "resources/search.png",
+  "homepage": "https://github.com/burcadoruciprian/vscode-simple-search",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/burcadoruciprian/vscode-simple-search.git"
+  },
+  "bugs": {
+    "url": "https://github.com/burcadoruciprian/vscode-simple-search/issues"
+  },
   "categories": [
     "Other"
   ],

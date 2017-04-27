@@ -1,5 +1,1 @@
-# Change Log
-
-
-## [1.0]
-- Initial release
+Detailed release notes are available [here](https://github.com/burcadoruciprian/vscode-simple-search/releases).
