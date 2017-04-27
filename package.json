@@ -2,7 +2,7 @@
   "name": "simple-search",
   "displayName": "Simple Search",
   "description": "Search selected text in default browser from Visual Studio Code",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "publisher": "burcadoruciprian",
   "engines": {
     "vscode": "^1.11.0"
